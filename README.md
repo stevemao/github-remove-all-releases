@@ -1,6 +1,6 @@
 #  [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage Status][coverall-image]][coverall-url]
 
-> Remove all releases of your GitHub repo
+> Remove all releases of a GitHub repo
 
 
 ## Install
@@ -27,7 +27,7 @@ githubRemoveAllReleases(AUTH, 'stevemaotest', 'github-remove-all-releases-test',
 $ npm install --global github-remove-all-releases
 $ github-remove-all-releases --help
 
-  Remove all releases of your GitHub repo
+  Remove all releases of a GitHub repo
 
   Usage
     github-remove-all-releases <owner> <repo>
