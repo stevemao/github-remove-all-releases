@@ -1,0 +1,10 @@
+sudo: false
+language: node_js
+node_js:
+  - 'iojs'
+  - '0.12'
+  - '0.10'
+after_script: NODE_ENV=test istanbul cover ./node_modules/mocha/bin/_mocha -- -R spec --timeout 50000 && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage
+env:
+  global:
+    - secure: QUg1Z4EJ5qy4d+QOLmAmgRL1n8BBu0Vgw2DKEvBGeHSqcyWsn4xnuravxGk1eesVSt6HM/AasrFUTXLAo40HGsX7OWzPQeBGuue5/T/+oN49YYqDKZ+cYaSh13HpcW9KxisI/igcMw7waBYHfnYbJjVX9ZUy3eNgJiVXLGilru9jLEb5SsQLASX+0edBt0hNq49/e1bEX/sEzUqid/F15h5sePSvbNtaEbMkuKfUroH9Y9JvXY1uuXM+BvC0BynBumpJkOLVshutD7frkLF+RHbqBQOCtSQ9u3kRSGTN4SwU/gbmLuHLIw7j6i1VW6tz+F0v0KMr67V8Vjrhpbkzm061LavUBzkzZkDn6YHhnpaVG8OzmqYNPqZy2R0r7VggKoyf8Od+bfWZ/TDA7y51pB8LEhO7+u6IGRCknxgoLx/x75dFduXTykqHB5ar97qEgu/HCVXmJdiDW7Tk/3u68S7KmLzxnB3xi5TeHxrAUoX43LNh2UuLzd2WikPYm4CnDoE5HTpJ37QesnESKhUWB26GiVF6UYCJ91l4SaNEY0OHskLYaSdJEpvTotngDHwDpanCgTusePUSae7xXe8WunE2UMZWvvlgVxouBz+UU/9tWieQhDXhbVsHfzspihkv13yFHIv77a4aH/XgSsJMFACGfhJUzmPoqwOo5x8Tuuc=

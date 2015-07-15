@@ -1,0 +1,48 @@
+{
+  "name": "github-remove-all-releases",
+  "version": "0.0.0",
+  "description": "Remove all releases of your GitHub repo",
+  "homepage": "https://github.com/stevemao/github-remove-all-releases",
+  "author": {
+    "name": "Steve Mao",
+    "email": "maochenyan@gmail.com",
+    "url": "https://github.com/stevemao"
+  },
+  "repository": "stevemao/github-remove-all-releases",
+  "license": "MIT",
+  "files": [
+    "index.js",
+    "cli.js"
+  ],
+  "keywords": [
+    "github-remove-all-releases",
+    "github",
+    "release",
+    "remove",
+    "all",
+    "releases",
+    "gh",
+    "delete"
+  ],
+  "dependencies": {
+    "github": "^0.2.4",
+    "meow": "^3.3.0",
+    "q": "^1.4.1"
+  },
+  "devDependencies": {
+    "chai": "^3.0.0",
+    "coveralls": "^2.11.2",
+    "istanbul": "^0.3.17",
+    "jscs": "^1.13.1",
+    "jshint": "^2.8.0",
+    "mocha": "*"
+  },
+  "scripts": {
+    "coverage": "istanbul cover _mocha -- -R spec --timeout 50000 && rm -rf ./coverage",
+    "lint": "jshint *.js --exclude node_modules && jscs *.js",
+    "test": "npm run-script lint && mocha --timeout 50000"
+  },
+  "bin": {
+    "github-remove-all-releases": "cli.js"
+  }
+}
