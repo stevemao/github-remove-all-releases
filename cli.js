@@ -13,8 +13,8 @@ var cli = meow({
     '  github-remove-all-releases stevemao github-repo -t cde5078435862fe1c8af8af4b582460b95e8ec30',
     '',
     'Options',
-    '  -t, --token         Your auth token',
-    '  -v, --verbose       Verbose output'
+    '  -t, --token      Your auth token',
+    '  -v, --verbose    Verbose output'
   ]
 }, {
   alias: {
