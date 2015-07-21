@@ -2,6 +2,8 @@
 
 > Remove all releases of a GitHub repo
 
+Useful when you need to scrap current releases and make new ones.
+
 
 ## Install
 
@@ -84,6 +86,11 @@ A custom filter function. All the releases will be passed as the only argument o
 ## CLI
 
 You can supply your auth token by a flag `-t` or `--token`. You can also [set up an environment variable](https://www.google.com.au/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=how%20to%20set%20environment%20variable) `CONVENTIONAL_GITHUB_RELEASER_TOKEN` to avoid typing your token every time. [Create a new token](https://github.com/settings/tokens/new) if you haven't.
+
+
+## Grunt
+
+See [grunt-github-remove-all-releases](https://github.com/stevemao/grunt-github-remove-all-releases).
 
 
 ## Related
