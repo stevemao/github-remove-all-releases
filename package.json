@@ -1,6 +1,6 @@
 {
   "name": "github-remove-all-releases",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Remove all releases of a GitHub repo",
   "homepage": "https://github.com/stevemao/github-remove-all-releases",
   "author": {
