@@ -19,7 +19,7 @@ var githubRemoveAllReleases = require('github-remove-all-releases');
 
 var AUTH = {
   type: 'oauth',
-  token: '0126af95c0e2d9b0a7c78738c4c00a860b04acc8'
+  token: '0126af95c0e2d9b0a7c78738c4c00a860b04acc8'// change this to your own GitHub token or use an environment variable
 };
 
 githubRemoveAllReleases(AUTH, 'stevemaotest', 'github-remove-all-releases-test', callback);
