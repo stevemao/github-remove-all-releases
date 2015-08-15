@@ -27,20 +27,7 @@ githubRemoveAllReleases(AUTH, 'stevemaotest', 'github-remove-all-releases-test',
 
 ```sh
 $ npm install --global github-remove-all-releases
-$ github-remove-all-releases --help
-
-  Remove all releases of a GitHub repo
-
-  Usage
-    github-remove-all-releases <owner> <repo>
-
-  Example
-    github-remove-all-releases stevemao github-repo
-    github-remove-all-releases stevemao github-repo -t cde5078435862fe1c8af8af4b582460b95e8ec30
-
-  Options
-    -t, --token      Your auth token
-    -v, --verbose    Verbose output
+$ github-remove-all-releases --help # for more details
 ```
 
 
