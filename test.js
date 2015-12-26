@@ -10,7 +10,7 @@ var github = new Github({
 
 var AUTH = {
   type: 'oauth',
-  token: process.env.GITHUB_REMOVE_ALL_RELEASES_TOKEN
+  token: process.env.TEST_GITHUB_REMOVE_ALL_RELEASES_TOKEN
 };
 
 github.authenticate(AUTH);
